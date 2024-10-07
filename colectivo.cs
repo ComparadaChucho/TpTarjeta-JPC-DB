@@ -5,14 +5,20 @@ namespace TP
     public class Colectivo
     {
         private float tarifa = 940;
+        private float saldoNegativoPermitido = -480;
 
         public Boleto PagarCon(Tarjeta tarjeta)
         {
-            if (tarjeta.DescontarSaldo(tarifa))
+            float tarifaAplicada = tarjeta.CalcularTarifa(tarifa);
+
+            if (tarjeta.Saldo - tarifaAplicada >= saldoNegativoPermitido)
             {
-                Console.WriteLine($"Pago realizado correctamente. Tarifa: ${tarifa}");
-                return new Boleto(tarifa);
+                tarjeta.DescontarSaldo(tarifaAplicada);
+                Console.WriteLine($"Pago realizado correctamente. Tarifa aplicada: ${tarifaAplicada}");
+                return new Boleto(tarifaAplicada);
             }
+
+            Console.WriteLine("Pago fallido. Saldo insuficiente.");
             return null;
         }
     }
