@@ -55,4 +55,24 @@ namespace TP
             return tarifaBase;
         }
     }
-}
+
+    public class MedioBoleto : Tarjeta
+        {
+            public MedioBoleto(float saldoInicial = 0) : base(saldoInicial) { }
+
+            public override float CalcularTarifa(float tarifaBase)
+            {
+                return tarifaBase / 2;
+            }
+        }
+
+        public class FranquiciaCompleta : Tarjeta
+        {
+            public FranquiciaCompleta(float saldoInicial = 0) : base(saldoInicial) { }
+
+            public override float CalcularTarifa(float tarifaBase)
+            {
+                return 0;
+            }
+        }
+    }
