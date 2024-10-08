@@ -4,22 +4,28 @@ namespace TP
 {
     public class Tarjeta
     {
-        public float Saldo { get; protected set; }
+        public float Saldo;
+        public int idTarjeta;
         private float limiteSaldo = 9900;
         private float[] cargasAceptadas = { 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000 };
-
         private float saldoNegativoPermitido = -480;
 
-        public Tarjeta(float saldoInicial = 0)
+        public Tarjeta(float saldoInicial, int id)
         {
-            Saldo = saldoInicial;
-            Console.WriteLine($"Tarjeta creada con: ${Saldo}");
+            this.Saldo = saldoInicial;
+            this.idTarjeta = id;
+            Console.WriteLine($"Tarjeta creada con: ${Saldo}, ID {idTarjeta}");
         }
 
         public float ObtenerSaldo()
         {
             Console.WriteLine($"Saldo: ${Saldo}");
             return Saldo;
+        }
+
+        public int ObtenerId()
+        {
+            return idTarjeta;
         }
 
         public bool CargarSaldo(float monto)
@@ -56,10 +62,10 @@ namespace TP
         }
     }
 
-    public class MedioBoleto : Tarjeta
+        public class MedioBoleto : Tarjeta
         {
-            public MedioBoleto(float saldoInicial = 0) : base(saldoInicial) { }
-
+            public MedioBoleto(float saldoInicial, int idTarjeta) : base(saldoInicial, idTarjeta) { }
+            
             public override float CalcularTarifa(float tarifaBase)
             {
                 return tarifaBase / 2;
@@ -68,7 +74,7 @@ namespace TP
 
         public class FranquiciaCompleta : Tarjeta
         {
-            public FranquiciaCompleta(float saldoInicial = 0) : base(saldoInicial) { }
+            public FranquiciaCompleta(float saldoInicial, int idTarjeta) : base(saldoInicial, idTarjeta) { }
 
             public override float CalcularTarifa(float tarifaBase)
             {
