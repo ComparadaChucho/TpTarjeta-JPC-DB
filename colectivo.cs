@@ -6,6 +6,13 @@ namespace TP
     {
         private float tarifa = 940;
         private float saldoNegativoPermitido = -480;
+        private string linea;
+        private Boleto boleto;
+
+        public Colectivo(string linea)
+        {
+            this.linea = linea;
+        }
 
         public Boleto PagarCon(Tarjeta tarjeta)
         {
@@ -15,7 +22,8 @@ namespace TP
             {
                 tarjeta.DescontarSaldo(tarifaAplicada);
                 Console.WriteLine($"Pago realizado correctamente. Tarifa aplicada: ${tarifaAplicada}");
-                return new Boleto(tarifaAplicada);
+                boleto = new Boleto(tarifaAplicada, tarjeta.GetType().Name, this.linea, tarjeta.Saldo, tarjeta.ObtenerId());
+                return boleto;
             }
 
             Console.WriteLine("Pago fallido. Saldo insuficiente.");
