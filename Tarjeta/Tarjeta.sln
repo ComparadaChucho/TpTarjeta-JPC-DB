@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarjeta", "Tarjeta.csproj", "{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpTarjeta-JPC-DB-Test", "..\TpTarjeta-JPC-DB-Test\TpTarjeta-JPC-DB-Test.csproj", "{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3CD36D1-9761-4003-98BC-D48480BC298F}
+	EndGlobalSection
+EndGlobal
