@@ -1,0 +1,15 @@
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\Tarjeta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\Tarjeta.AssemblyInfoInputs.cache
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\Tarjeta.AssemblyInfo.cs
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\Tarjeta.csproj.CoreCompileInputs.cache
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\Tarjeta.sourcelink.json
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\bin\Debug\net8.0\Tarjeta.exe
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\bin\Debug\net8.0\Tarjeta.deps.json
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\bin\Debug\net8.0\Tarjeta.runtimeconfig.json
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\bin\Debug\net8.0\Tarjeta.dll
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\bin\Debug\net8.0\Tarjeta.pdb
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\Tarjeta.dll
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\refint\Tarjeta.dll
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\Tarjeta.pdb
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\Tarjeta.genruntimeconfig.cache
+C:\Users\dante\OneDrive\Escritorio\tarjeta\Tarjeta\obj\Debug\net8.0\ref\Tarjeta.dll
