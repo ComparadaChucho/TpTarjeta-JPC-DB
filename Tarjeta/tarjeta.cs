@@ -5,21 +5,28 @@ namespace TP
     public class Tarjeta
     {
         public float Saldo { get; protected set; }
+        public int idTarjeta;
         private float saldoPendiente = 0;
         private float limiteSaldo = 36000;
         private float saldoNegativoPermitido = -480;
         private float[] cargasAceptadas = { 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000 };
 
-        public Tarjeta(float saldoInicial = 0)
+        public Tarjeta(float saldoInicial, int id)
         {
             Saldo = saldoInicial;
-            Console.WriteLine($"Tarjeta creada con: ${Saldo}");
+            this.idTarjeta = id;
+            Console.WriteLine($"Tarjeta creada con: ${Saldo}, ID {idTarjeta}");
         }
 
         public float ObtenerSaldo()
         {
             Console.WriteLine($"Saldo: ${Saldo}");
             return Saldo;
+        }
+
+        public int ObtenerId()
+        {
+            return idTarjeta;
         }
 
         public bool CargarSaldo(float monto)
