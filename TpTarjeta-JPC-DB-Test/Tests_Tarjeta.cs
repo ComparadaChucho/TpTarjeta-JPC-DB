@@ -3,26 +3,18 @@ using TP;
 
 namespace TpTarjeta_JPC_DB_Test
 {
-    public class Tests
+    public class Tests_Tarjeta
 
     {
-        public Colectivo colectivo;
         public Tarjeta tarjeta;
-        public MedioBoleto medioboleto;
-        public FranquiciaCompleta franquicia;
-
 
         [SetUp]
         public void Setup()
         {
-            tarjeta = new Tarjeta(0);
-            colectivo = new Colectivo();
-            medioboleto = new MedioBoleto(0);
-            franquicia = new FranquiciaCompleta(0);
-            
+            tarjeta = new Tarjeta(0, 564987);
         }
 
-        [Test]  
+        [Test]
         public void Check_saldo()
         {
             tarjeta.CargarSaldo(2000);
@@ -61,7 +53,7 @@ namespace TpTarjeta_JPC_DB_Test
             tarjeta.DescontarSaldo(8000);
 
             tarjeta.CargarSaldo(9000);
-            Assert.That(tarjeta.Saldo, Is.EqualTo(9000)); 
+            Assert.That(tarjeta.Saldo, Is.EqualTo(9000));
         }
 
         [Test]
@@ -90,18 +82,5 @@ namespace TpTarjeta_JPC_DB_Test
             tarjeta.CargarSaldo(2000);
             Assert.That(tarjeta.Saldo, Is.EqualTo(1520));
         }
-
-        [Test]
-        public void Franquicias()
-        {
-            medioboleto.CargarSaldo(2000);
-            colectivo.PagarCon(medioboleto); 
-            Assert.That(medioboleto.Saldo, Is.EqualTo(1530));
-
-            franquicia.CargarSaldo(2000);
-            colectivo.PagarCon(franquicia);
-            Assert.That(franquicia.Saldo, Is.EqualTo(2000));
-        }
-
     }
 }
