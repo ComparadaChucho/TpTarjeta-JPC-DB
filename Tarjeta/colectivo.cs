@@ -21,12 +21,10 @@ namespace TP
             if (tarjeta.Saldo - tarifaAplicada >= saldoNegativoPermitido)
             {
                 tarjeta.DescontarSaldo(tarifaAplicada);
-                Console.WriteLine($"Pago realizado correctamente. Tarifa aplicada: ${tarifaAplicada}");
                 boleto = new Boleto(tarifaAplicada, tarjeta.GetType().Name, this.linea, tarjeta.Saldo, tarjeta.ObtenerId());
                 return boleto;
             }
 
-            Console.WriteLine("Pago fallido. Saldo insuficiente.");
             return null;
         }
     }

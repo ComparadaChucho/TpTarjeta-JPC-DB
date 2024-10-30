@@ -1,9 +1,9 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using TP;
 
 namespace TpTarjeta_JPC_DB_Test
 {
-    public class Tests_Tarjeta
+    public class TestsIteracion1
 
     {
         public Tarjeta tarjeta;
@@ -15,7 +15,7 @@ namespace TpTarjeta_JPC_DB_Test
         }
 
         [Test]
-        public void Check_saldo()
+        public void Iteracion_1()
         {
             tarjeta.CargarSaldo(2000);
             Assert.That(tarjeta.Saldo, Is.EqualTo(2000));
@@ -54,33 +54,6 @@ namespace TpTarjeta_JPC_DB_Test
 
             tarjeta.CargarSaldo(9000);
             Assert.That(tarjeta.Saldo, Is.EqualTo(9000));
-        }
-
-        [Test]
-        public void Descuento_saldo()
-        {
-            tarjeta.CargarSaldo(2000);
-            Assert.IsTrue(tarjeta.DescontarSaldo(1000));
-            Assert.That(tarjeta.Saldo, Is.EqualTo(1000));
-
-            tarjeta.DescontarSaldo(500);
-
-            Assert.IsTrue(tarjeta.DescontarSaldo(980));
-            Assert.That(tarjeta.Saldo, Is.EqualTo(-480));
-        }
-
-        [Test]
-        public void Saldo_negativo_permitido()
-        {
-            tarjeta.CargarSaldo(2000);
-            tarjeta.DescontarSaldo(2480);
-            Assert.That(tarjeta.Saldo, Is.EqualTo(-480));
-
-            Assert.IsFalse(tarjeta.DescontarSaldo(10));
-            Assert.That(tarjeta.Saldo, Is.EqualTo(-480));
-
-            tarjeta.CargarSaldo(2000);
-            Assert.That(tarjeta.Saldo, Is.EqualTo(1520));
         }
     }
 }
