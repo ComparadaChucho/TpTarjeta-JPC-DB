@@ -1,53 +1,47 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\",
+  "WorkspaceRootPath": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}|..\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tptarjeta-jpc-db-test\\testsiteracion3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}|..\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tptarjeta-jpc-db-test\\testsiteracion2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tarjeta\\tiempofalso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:tiempofalso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tarjeta\\medioboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:medioboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tarjeta\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tarjeta\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tarjeta\\franquiciacompleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:franquiciacompleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}|..\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tptarjeta-jpc-db-test\\testsiteracion3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tarjeta\\tiempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tarjeta\\tiempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:tiempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tarjeta\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tarjeta\\tiempofalso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:tiempofalso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tarjeta\\colectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}|..\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tptarjeta-jpc-db-test\\testsiteracion2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093EC76F-2BED-4A6C-BAF7-B50ECF4C929D}|..\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tptarjeta-jpc-db-test\\testsiteracion4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tarjeta\\colectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:colectivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\juanp\\onedrive\\escritorio\\escuela\\tptarjeta-jpc-db\\tarjeta\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tarjeta\\tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:tarjeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tarjeta\\medioboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:medioboleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tarjeta\\franquiciacompleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:franquiciacompleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|c:\\users\\dante\\onedrive\\escritorio\\tarjeta\\tarjeta\\boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{404FCF79-D7BD-4E39-BDFB-1DF2A5DFF1AE}|Tarjeta.csproj|solutionrelative:boleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,168 +51,150 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "main.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\main.cs",
-              "RelativeDocumentMoniker": "main.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\main.cs",
-              "RelativeToolTip": "main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T21:02:53.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TestsIteracion2.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
-              "RelativeDocumentMoniker": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
-              "RelativeToolTip": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwDwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T20:54:46.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TestsIteracion3.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs",
-              "RelativeDocumentMoniker": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs*",
-              "RelativeToolTip": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs*",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T20:54:40.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Main.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
               "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Main.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T23:03:35.575Z"
+              "WhenOpened": "2024-11-02T20:13:43.484Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
+              "Title": "TestsIteracion4.cs",
+              "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion4.cs",
+              "RelativeDocumentMoniker": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion4.cs",
+              "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion4.cs*",
+              "RelativeToolTip": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion4.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T20:00:25.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TestsIteracion2.cs",
               "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
+              "RelativeDocumentMoniker": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
               "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABJAAAAAAAAAA==",
+              "RelativeToolTip": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion2.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T23:04:39.907Z"
+              "WhenOpened": "2024-10-31T23:04:39.907Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TiempoFalso.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\TiempoFalso.cs",
+              "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\TiempoFalso.cs",
               "RelativeDocumentMoniker": "TiempoFalso.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\TiempoFalso.cs",
+              "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\TiempoFalso.cs",
               "RelativeToolTip": "TiempoFalso.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T22:55:40.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Tiempo.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tiempo.cs",
+              "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tiempo.cs",
               "RelativeDocumentMoniker": "Tiempo.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tiempo.cs",
+              "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tiempo.cs",
               "RelativeToolTip": "Tiempo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T22:55:29.444Z"
+              "WhenOpened": "2024-10-31T22:55:29.444Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "TestsIteracion3.cs",
               "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs",
+              "RelativeDocumentMoniker": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs",
               "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs",
+              "RelativeToolTip": "..\\TpTarjeta-JPC-DB-Test\\TestsIteracion3.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T20:53:32.707Z"
+              "WhenOpened": "2024-10-30T20:53:32.707Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "boleto.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\boleto.cs",
+              "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\boleto.cs",
               "RelativeDocumentMoniker": "boleto.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\boleto.cs",
+              "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\boleto.cs",
               "RelativeToolTip": "boleto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBEAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T16:39:51.398Z"
+              "WhenOpened": "2024-10-29T16:39:51.398Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "franquiciaCompleta.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\franquiciaCompleta.cs",
+              "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\franquiciaCompleta.cs",
               "RelativeDocumentMoniker": "franquiciaCompleta.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\franquiciaCompleta.cs",
+              "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\franquiciaCompleta.cs",
               "RelativeToolTip": "franquiciaCompleta.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T15:47:30.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "tarjeta.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\tarjeta.cs",
+              "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\tarjeta.cs",
               "RelativeDocumentMoniker": "tarjeta.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\tarjeta.cs",
+              "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\tarjeta.cs",
               "RelativeToolTip": "tarjeta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAqwEkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T15:35:38.313Z"
+              "WhenOpened": "2024-10-26T15:35:38.313Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "medioBoleto.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\medioBoleto.cs",
+              "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\medioBoleto.cs",
               "RelativeDocumentMoniker": "medioBoleto.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\medioBoleto.cs",
+              "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\medioBoleto.cs",
               "RelativeToolTip": "medioBoleto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T15:48:06.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "colectivo.cs",
-              "DocumentMoniker": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\colectivo.cs",
+              "DocumentMoniker": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\colectivo.cs",
               "RelativeDocumentMoniker": "colectivo.cs",
-              "ToolTip": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\colectivo.cs",
+              "ToolTip": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\colectivo.cs",
               "RelativeToolTip": "colectivo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T15:16:13.513Z"
+              "WhenOpened": "2024-10-26T15:16:13.513Z",
+              "EditorCaption": ""
             }
           ]
         }

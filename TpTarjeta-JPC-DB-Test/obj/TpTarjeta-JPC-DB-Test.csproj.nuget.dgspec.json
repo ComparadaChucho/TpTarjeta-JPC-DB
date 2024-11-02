@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj": {}
+    "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tarjeta.csproj": {
+    "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tarjeta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tarjeta.csproj",
+        "projectUniqueName": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tarjeta.csproj",
         "projectName": "Tarjeta",
-        "projectPath": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tarjeta.csproj",
-        "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\obj\\",
+        "projectPath": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tarjeta.csproj",
+        "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,17 +64,17 @@
         }
       }
     },
-    "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj": {
+    "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj",
+        "projectUniqueName": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj",
         "projectName": "TpTarjeta-JPC-DB-Test",
-        "projectPath": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj",
-        "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\TpTarjeta-JPC-DB-Test\\obj\\",
+        "projectPath": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\TpTarjeta-JPC-DB-Test.csproj",
+        "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\TpTarjeta-JPC-DB-Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +88,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tarjeta.csproj": {
-                "projectPath": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tarjeta.csproj"
+              "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tarjeta.csproj": {
+                "projectPath": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tarjeta.csproj"
               }
             }
           }
