@@ -7,11 +7,15 @@ namespace TpTarjeta_JPC_DB_Test
 
     {
         public Tarjeta tarjeta;
+        public Colectivo colectivo;
+        public TiempoFalso tiempoFalso;
 
         [SetUp]
         public void Setup()
         {
             tarjeta = new Tarjeta(0, 564987);
+            colectivo = new Colectivo("102");
+            tiempoFalso = new TiempoFalso();
         }
 
         [Test]
@@ -34,30 +38,84 @@ namespace TpTarjeta_JPC_DB_Test
         [Test]
         public void Limitacion_En_El_Pago_Franquicias_Completas()
         {
-            TiempoFalso tiempoFalso = new TiempoFalso();
-            FranquiciaCompleta tarjeta = new FranquiciaCompleta(1000, 123, tiempoFalso);
-            Colectivo colectivo = new Colectivo("102");
+            FranquiciaCompleta franquicia = new FranquiciaCompleta(1000, 123, tiempoFalso);
 
-            float tarifa1 = tarjeta.CalcularTarifa(940);
-            Assert.That(0, Is.EqualTo(tarifa1));
+            float tarifa = franquicia.CalcularTarifa(940);
+            Assert.That(0, Is.EqualTo(tarifa));
 
-            float tarifa2 = tarjeta.CalcularTarifa(940);
-            Assert.That(0, Is.EqualTo(tarifa2));
+            tarifa = franquicia.CalcularTarifa(940);
+            Assert.That(0, Is.EqualTo(tarifa));
 
-            float tarifa3 = tarjeta.CalcularTarifa(940);
-            Assert.That(940, Is.EqualTo(tarifa3));
+            tarifa = franquicia.CalcularTarifa(940);
+            Assert.That(940, Is.EqualTo(tarifa));
 
             tiempoFalso.AgregarDias(1);
 
-            float tarifaNueva1 = tarjeta.CalcularTarifa(940);
-            Assert.That(0, Is.EqualTo(tarifaNueva1));
+            tarifa = franquicia.CalcularTarifa(940);
+            Assert.That(0, Is.EqualTo(tarifa));
 
-            float tarifaNueva2 = tarjeta.CalcularTarifa(940);
-            Assert.That(0, Is.EqualTo(tarifaNueva2));
+            tarifa = franquicia.CalcularTarifa(940);
+            Assert.That(0, Is.EqualTo(tarifa));
 
-            float tarifaNueva3 = tarjeta.CalcularTarifa(940);
-            Assert.That(940, Is.EqualTo(tarifaNueva3));
+            tarifa = franquicia.CalcularTarifa(940);
+            Assert.That(940, Is.EqualTo(tarifa));
         }
 
+        [Test]
+        public void Limitacion_En_El_Pago_Medio_Boleto()
+        {
+            MedioBoleto medioBoleto = new MedioBoleto(1000, 123, tiempoFalso);
+
+            float tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(470, Is.EqualTo(tarifa));
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.IsFalse(tarifa == 470);
+
+            tiempoFalso.AgregarMinutos(6);
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(470, Is.EqualTo(tarifa));
+
+            tiempoFalso.AgregarMinutos(6);
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(470, Is.EqualTo(tarifa));
+
+            tiempoFalso.AgregarMinutos(6);
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(470, Is.EqualTo(tarifa));
+
+            tiempoFalso.AgregarMinutos(6);
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(940, Is.EqualTo(tarifa));
+
+            tiempoFalso.AgregarDias(1);
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(470, Is.EqualTo(tarifa));
+
+            tiempoFalso.AgregarMinutos(6);
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(470, Is.EqualTo(tarifa));
+
+            tiempoFalso.AgregarMinutos(6);
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(470, Is.EqualTo(tarifa));
+
+            tiempoFalso.AgregarMinutos(6);
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(470, Is.EqualTo(tarifa));
+
+            tiempoFalso.AgregarMinutos(6);
+
+            tarifa = medioBoleto.CalcularTarifa(940);
+            Assert.That(940, Is.EqualTo(tarifa));
+        }
     }
 }
