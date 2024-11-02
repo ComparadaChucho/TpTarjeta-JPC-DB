@@ -10,16 +10,16 @@ namespace TpTarjeta_JPC_DB_Test
         public Colectivo colectivo;
         public MedioBoleto medioboleto;
         public FranquiciaCompleta franquicia;
+        public TiempoFalso tiempoFalso;
 
         [SetUp]
         public void Setup()
         {
-            TiempoFalso tiempoFalso = new TiempoFalso();
             tarjeta = new Tarjeta(0, 564987);
             colectivo = new Colectivo("102");
-            medioboleto = new MedioBoleto(0, 4863856);
+            medioboleto = new MedioBoleto(0, 4863856, tiempoFalso);
             franquicia = new FranquiciaCompleta(0, 5757683, tiempoFalso);
-
+            tiempoFalso = new TiempoFalso();
         }
 
         [Test]
