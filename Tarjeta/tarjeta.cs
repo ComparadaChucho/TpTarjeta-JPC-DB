@@ -4,7 +4,7 @@ namespace TP
 {
     public class Tarjeta
     {
-        public float Saldo { get; protected set; }
+        private float Saldo;
         public int idTarjeta;
         public float saldoPendiente = 0;
         private float limiteSaldo = 36000;

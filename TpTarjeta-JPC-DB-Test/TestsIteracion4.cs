@@ -8,8 +8,6 @@ namespace TpTarjeta_JPC_DB_Test
     {
         public Tarjeta tarjeta;
         public Colectivo colectivo, interurbano;
-        public MedioBoleto medioboleto;
-        public FranquiciaCompleta franquicia;
         public TiempoFalso tiempoFalso;
 
         [SetUp]
@@ -17,8 +15,6 @@ namespace TpTarjeta_JPC_DB_Test
         {
             tiempoFalso = new TiempoFalso();
             tarjeta = new Tarjeta(0, 564987);
-            medioboleto = new MedioBoleto(0, 4863856, tiempoFalso);
-            franquicia = new FranquiciaCompleta(0, 5757683, tiempoFalso);
             colectivo = new Colectivo("102", false);
             interurbano = new Colectivo("35/9 N", true);
         }
@@ -26,17 +22,57 @@ namespace TpTarjeta_JPC_DB_Test
         [Test]
         public void Lineas_Interurbanas()
         {
+            FranquiciaCompleta franquicia = new FranquiciaCompleta(0, 123, tiempoFalso);
+            MedioBoleto medioBoleto = new MedioBoleto(0, 123, tiempoFalso);
+
+            tiempoFalso.AgregarMinutos(360);
+
             tarjeta.CargarSaldo(4000);
-            medioboleto.CargarSaldo(4000);
+            medioBoleto.CargarSaldo(4000);
             franquicia.CargarSaldo(4000);
 
             interurbano.PagarCon(tarjeta);
-            interurbano.PagarCon(medioboleto);
+            interurbano.PagarCon(medioBoleto);
             interurbano.PagarCon(franquicia);
 
-            Assert.That(tarjeta.Saldo, Is.EqualTo(1500));
-            Assert.That(medioboleto.Saldo, Is.EqualTo(2750));
-            Assert.That(franquicia.Saldo, Is.EqualTo(4000));
+            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(1500));
+            Assert.That(medioBoleto.ObtenerSaldo(), Is.EqualTo(2750));
+            Assert.That(franquicia.ObtenerSaldo(), Is.EqualTo(4000));
+        }
+
+        [Test]
+        public void Franquicias() 
+        {
+            FranquiciaCompleta franquicia = new FranquiciaCompleta(0, 123, tiempoFalso);
+            MedioBoleto medioBoleto = new MedioBoleto(0, 123, tiempoFalso);
+
+            medioBoleto.CargarSaldo(9000);
+            franquicia.CargarSaldo(9000);
+
+            //Son las 00:00:00 de un lunes, cobra tarifa completa
+            colectivo.PagarCon(medioBoleto);
+            colectivo.PagarCon(franquicia);
+
+            Assert.That(medioBoleto.ObtenerSaldo(), Is.EqualTo(7800));
+            Assert.That(franquicia.ObtenerSaldo(), Is.EqualTo(7800));
+
+            tiempoFalso.AgregarMinutos(360);
+
+            //Son las 06:00:00 de un lunes, cobra tarifa con beneficio
+            colectivo.PagarCon(medioBoleto);
+            colectivo.PagarCon(franquicia);
+
+            Assert.That(medioBoleto.ObtenerSaldo(), Is.EqualTo(7200));
+            Assert.That(franquicia.ObtenerSaldo(), Is.EqualTo(7800));
+
+            tiempoFalso.AgregarDias(-1);
+
+            //Son las 06:00:00 pero es Domingo, cobra tarifa completa
+            colectivo.PagarCon(medioBoleto);
+            colectivo.PagarCon(franquicia);
+
+            Assert.That(medioBoleto.ObtenerSaldo(), Is.EqualTo(6000));
+            Assert.That(franquicia.ObtenerSaldo(), Is.EqualTo(6600));
         }
     }
 }

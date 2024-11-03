@@ -31,10 +31,10 @@ namespace TP
                 tarifaAplicada = tarjeta.CalcularTarifa(tarifa);
             }
 
-            if (tarjeta.Saldo - tarifaAplicada >= saldoNegativoPermitido)
+            if (tarjeta.ObtenerSaldo() - tarifaAplicada >= saldoNegativoPermitido)
             {
                 tarjeta.DescontarSaldo(tarifaAplicada);
-                boleto = new Boleto(tarifaAplicada, tarjeta.GetType().Name, this.linea, tarjeta.Saldo, tarjeta.ObtenerId());
+                boleto = new Boleto(tarifaAplicada, tarjeta.GetType().Name, this.linea, tarjeta.ObtenerSaldo(), tarjeta.ObtenerId());
                 return boleto;
             }
 
