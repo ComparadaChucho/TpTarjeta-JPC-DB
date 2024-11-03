@@ -16,7 +16,7 @@ namespace TpTarjeta_JPC_DB_Test
         public void Setup()
         {
             tarjeta = new Tarjeta(0, 564987);
-            colectivo = new Colectivo("102");
+            colectivo = new Colectivo("102", false);
             medioboleto = new MedioBoleto(0, 4863856, tiempoFalso);
             franquicia = new FranquiciaCompleta(0, 5757683, tiempoFalso);
             tiempoFalso = new TiempoFalso();
@@ -54,7 +54,7 @@ namespace TpTarjeta_JPC_DB_Test
         {
             medioboleto.CargarSaldo(2000);
             colectivo.PagarCon(medioboleto);
-            Assert.That(medioboleto.Saldo, Is.EqualTo(1530));
+            Assert.That(medioboleto.Saldo, Is.EqualTo(1400));
 
             franquicia.CargarSaldo(2000);
             colectivo.PagarCon(franquicia);
