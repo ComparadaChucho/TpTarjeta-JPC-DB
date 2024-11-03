@@ -27,11 +27,11 @@ namespace TpTarjeta_JPC_DB_Test
             tarjeta.CargarSaldo(9000);
             tarjeta.CargarSaldo(2000);
 
-            Assert.That(tarjeta.Saldo, Is.EqualTo(36000));
+            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(36000));
             Assert.That(tarjeta.saldoPendiente, Is.EqualTo(2000));
 
             tarjeta.DescontarSaldo(2000);
-            Assert.That(tarjeta.Saldo, Is.EqualTo(36000));
+            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(36000));
             Assert.That(tarjeta.saldoPendiente, Is.EqualTo(0));
         }
 
@@ -40,23 +40,28 @@ namespace TpTarjeta_JPC_DB_Test
         {
             FranquiciaCompleta franquicia = new FranquiciaCompleta(1000, 123, tiempoFalso);
 
+            tiempoFalso.AgregarMinutos(360);
+
             float tarifa = franquicia.CalcularTarifa(940);
             Assert.That(0, Is.EqualTo(tarifa));
 
             tarifa = franquicia.CalcularTarifa(940);
             Assert.That(0, Is.EqualTo(tarifa));
 
+            //Se quedo sin viajes gratuitos, cobra tarifa completa
             tarifa = franquicia.CalcularTarifa(940);
             Assert.That(940, Is.EqualTo(tarifa));
 
             tiempoFalso.AgregarDias(1);
 
+            //Paso 1 dia, tiene 2 boletos gratuitos
             tarifa = franquicia.CalcularTarifa(940);
             Assert.That(0, Is.EqualTo(tarifa));
 
             tarifa = franquicia.CalcularTarifa(940);
             Assert.That(0, Is.EqualTo(tarifa));
 
+            //Se quedo sin viajes gratuitos, cobra tarifa completa
             tarifa = franquicia.CalcularTarifa(940);
             Assert.That(940, Is.EqualTo(tarifa));
         }
@@ -66,11 +71,14 @@ namespace TpTarjeta_JPC_DB_Test
         {
             MedioBoleto medioBoleto = new MedioBoleto(1000, 123, tiempoFalso);
 
+            tiempoFalso.AgregarMinutos(360);
+
             float tarifa = medioBoleto.CalcularTarifa(940);
             Assert.That(470, Is.EqualTo(tarifa));
 
+            //Como no pasaron mas de 5 minutos cobra tarifa completa
             tarifa = medioBoleto.CalcularTarifa(940);
-            Assert.IsFalse(tarifa == 470);
+            Assert.IsFalse(tarifa == 470); 
 
             tiempoFalso.AgregarMinutos(6);
 
@@ -89,11 +97,13 @@ namespace TpTarjeta_JPC_DB_Test
 
             tiempoFalso.AgregarMinutos(6);
 
+            //Pasaron mas de 5 minutos pero se quedo sin viajes con medio Boleto, cobra tarifa completa
             tarifa = medioBoleto.CalcularTarifa(940);
-            Assert.That(940, Is.EqualTo(tarifa));
+            Assert.That(940, Is.EqualTo(tarifa)); 
 
             tiempoFalso.AgregarDias(1);
 
+            //Paso 1 dia, por lo tanto, tiene 4 medio boleto para utilizar
             tarifa = medioBoleto.CalcularTarifa(940);
             Assert.That(470, Is.EqualTo(tarifa));
 
@@ -114,6 +124,7 @@ namespace TpTarjeta_JPC_DB_Test
 
             tiempoFalso.AgregarMinutos(6);
 
+            //Pasaron mas de 5 minutos pero se quedo sin viajes con medio Boleto, cobra tarifa completa
             tarifa = medioBoleto.CalcularTarifa(940);
             Assert.That(940, Is.EqualTo(tarifa));
         }

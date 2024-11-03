@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tarjeta.csproj": {}
+    "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tarjeta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tarjeta.csproj": {
+    "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tarjeta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tarjeta.csproj",
+        "projectUniqueName": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tarjeta.csproj",
         "projectName": "Tarjeta",
-        "projectPath": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\Tarjeta.csproj",
-        "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dante\\OneDrive\\Escritorio\\tarjeta\\Tarjeta\\obj\\",
+        "projectPath": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\Tarjeta.csproj",
+        "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juanp\\OneDrive\\Escritorio\\Escuela\\TpTarjeta-JPC-DB\\Tarjeta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
