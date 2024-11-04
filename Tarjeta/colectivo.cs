@@ -23,8 +23,7 @@ namespace TP
 
             if (interurbano == true)
             {
-                tarifa = 2500;
-                tarifaAplicada = tarjeta.CalcularTarifa(tarifa);
+                tarifaAplicada = tarjeta.CalcularTarifa(tarifaInterurbano);
             }
             else
             {

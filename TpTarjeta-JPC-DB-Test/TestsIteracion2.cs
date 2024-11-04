@@ -13,7 +13,7 @@ namespace TpTarjeta_JPC_DB_Test
         [SetUp]
         public void Setup()
         {
-            tarjeta = new Tarjeta(0, 564987);
+            tarjeta = new Tarjeta(0, 564987, tiempoFalso);
             colectivo = new Colectivo("102", false);
             tiempoFalso = new TiempoFalso();
         }

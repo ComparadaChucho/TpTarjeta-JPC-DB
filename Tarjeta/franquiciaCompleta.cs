@@ -7,7 +7,7 @@ namespace TP
         private List<DateTime> viajesRealizados;
         private Tiempo tiempo;
 
-        public FranquiciaCompleta(float saldoInicial, int idTarjeta, Tiempo tiempo) : base(saldoInicial, idTarjeta) {
+        public FranquiciaCompleta(float saldoInicial, int idTarjeta, Tiempo tiempo) : base(saldoInicial, idTarjeta, tiempo) {
             viajesRealizados = new List<DateTime>();
             this.tiempo = tiempo;
         }

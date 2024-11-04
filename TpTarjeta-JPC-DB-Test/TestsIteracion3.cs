@@ -13,7 +13,7 @@ namespace TpTarjeta_JPC_DB_Test
         [SetUp]
         public void Setup()
         {
-            tarjeta = new Tarjeta(0, 564987);
+            tarjeta = new Tarjeta(0, 564987, tiempoFalso);
             colectivo = new Colectivo("102", false);
             tiempoFalso = new TiempoFalso();
         }
@@ -48,7 +48,7 @@ namespace TpTarjeta_JPC_DB_Test
             tarifa = franquicia.CalcularTarifa(940);
             Assert.That(0, Is.EqualTo(tarifa));
 
-            //Se quedo sin viajes gratuitos, cobra tarifa completa
+            //Se quedo sin viajes gratuitos, cobra tarifa normal
             tarifa = franquicia.CalcularTarifa(940);
             Assert.That(940, Is.EqualTo(tarifa));
 
@@ -61,7 +61,7 @@ namespace TpTarjeta_JPC_DB_Test
             tarifa = franquicia.CalcularTarifa(940);
             Assert.That(0, Is.EqualTo(tarifa));
 
-            //Se quedo sin viajes gratuitos, cobra tarifa completa
+            //Se quedo sin viajes gratuitos, cobra tarifa normal
             tarifa = franquicia.CalcularTarifa(940);
             Assert.That(940, Is.EqualTo(tarifa));
         }
@@ -76,7 +76,7 @@ namespace TpTarjeta_JPC_DB_Test
             float tarifa = medioBoleto.CalcularTarifa(940);
             Assert.That(470, Is.EqualTo(tarifa));
 
-            //Como no pasaron mas de 5 minutos cobra tarifa completa
+            //Como no pasaron mas de 5 minutos cobra tarifa normal
             tarifa = medioBoleto.CalcularTarifa(940);
             Assert.IsFalse(tarifa == 470); 
 
@@ -97,7 +97,7 @@ namespace TpTarjeta_JPC_DB_Test
 
             tiempoFalso.AgregarMinutos(6);
 
-            //Pasaron mas de 5 minutos pero se quedo sin viajes con medio Boleto, cobra tarifa completa
+            //Pasaron mas de 5 minutos pero se quedo sin viajes con medio Boleto, cobra tarifa normal
             tarifa = medioBoleto.CalcularTarifa(940);
             Assert.That(940, Is.EqualTo(tarifa)); 
 
@@ -124,7 +124,7 @@ namespace TpTarjeta_JPC_DB_Test
 
             tiempoFalso.AgregarMinutos(6);
 
-            //Pasaron mas de 5 minutos pero se quedo sin viajes con medio Boleto, cobra tarifa completa
+            //Pasaron mas de 5 minutos pero se quedo sin viajes con medio Boleto, cobra tarifa normal
             tarifa = medioBoleto.CalcularTarifa(940);
             Assert.That(940, Is.EqualTo(tarifa));
         }

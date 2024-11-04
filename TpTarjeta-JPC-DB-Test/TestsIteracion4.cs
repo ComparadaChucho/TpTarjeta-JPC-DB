@@ -14,7 +14,7 @@ namespace TpTarjeta_JPC_DB_Test
         public void Setup()
         {
             tiempoFalso = new TiempoFalso();
-            tarjeta = new Tarjeta(0, 564987);
+            tarjeta = new Tarjeta(0, 564987, tiempoFalso);
             colectivo = new Colectivo("102", false);
             interurbano = new Colectivo("35/9 N", true);
         }
@@ -49,7 +49,7 @@ namespace TpTarjeta_JPC_DB_Test
             medioBoleto.CargarSaldo(9000);
             franquicia.CargarSaldo(9000);
 
-            //Son las 00:00:00 de un lunes, cobra tarifa completa
+            //Son las 00:00:00 de un lunes, cobra tarifa normal
             colectivo.PagarCon(medioBoleto);
             colectivo.PagarCon(franquicia);
 
@@ -67,12 +67,45 @@ namespace TpTarjeta_JPC_DB_Test
 
             tiempoFalso.AgregarDias(-1);
 
-            //Son las 06:00:00 pero es Domingo, cobra tarifa completa
+            //Son las 06:00:00 pero es Domingo, cobra tarifa normal
             colectivo.PagarCon(medioBoleto);
             colectivo.PagarCon(franquicia);
 
             Assert.That(medioBoleto.ObtenerSaldo(), Is.EqualTo(6000));
             Assert.That(franquicia.ObtenerSaldo(), Is.EqualTo(6600));
+        }
+        [Test]
+        public void Boleto_de_uso_Frecuente()
+        {
+            //Primeros 29 viajes Tarifa normal
+            for (int i = 1; i <= 29; i++)
+            {
+                tarjeta.CargarSaldo(1200);
+                colectivo.PagarCon(tarjeta);
+                Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
+            }
+
+            //30 al 79 20% de descuento
+            for (int i = 1; i >= 49; i++)
+            {
+                tarjeta.CargarSaldo(960);
+                colectivo.PagarCon(tarjeta);
+                Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
+            }
+
+            //Viaje 80 25% de descuento
+            tarjeta.CargarSaldo(900);
+            colectivo.PagarCon(tarjeta);
+            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
+
+            //Viaje 81 en adelante Tarifa normal
+            tarjeta.CargarSaldo(1200);
+            colectivo.PagarCon(tarjeta);
+            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
+
+            tarjeta.CargarSaldo(1200);
+            colectivo.PagarCon(tarjeta);
+            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
         }
     }
 }
