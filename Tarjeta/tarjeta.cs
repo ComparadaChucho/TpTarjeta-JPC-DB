@@ -10,8 +10,9 @@ namespace TP
         private float limiteSaldo = 36000;
         private float saldoNegativoPermitido = -480;
         private float[] cargasAceptadas = { 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000 };
-        private List<DateTime> viajesRealizados;
         private Tiempo tiempo;
+        private List<DateTime> viajesRealizados;
+        private DateTime ultimoMes;
 
         public Tarjeta(float saldoInicial, int id, Tiempo tiempo)
         {
@@ -75,9 +76,24 @@ namespace TP
 
         public virtual float CalcularTarifa(float tarifaBase)
         {
+            DateTime fechaActual = tiempo.Now();
+
+            if (viajesRealizados.Count() > 0) 
+            {
+                if (fechaActual.Month != ultimoMes.Month || fechaActual.Year != ultimoMes.Year)
+                {
+                    viajesRealizados.Clear();
+                    ultimoMes = fechaActual;
+                }
+            }
+            else
+            {
+                ultimoMes = fechaActual;
+            }
+
             float descuento;
 
-            if(viajesRealizados.Count() >= 29 && viajesRealizados.Count() <= 79)
+            if (viajesRealizados.Count() >= 29 && viajesRealizados.Count() < 79)
             {
                 viajesRealizados.Add(tiempo.Now());
                 descuento = tarifaBase * 0.2f;
@@ -90,7 +106,6 @@ namespace TP
                 descuento = tarifaBase * 0.25f;
                 return tarifaBase - descuento;
             }
-
             viajesRealizados.Add(tiempo.Now());
             return tarifaBase;
         }
