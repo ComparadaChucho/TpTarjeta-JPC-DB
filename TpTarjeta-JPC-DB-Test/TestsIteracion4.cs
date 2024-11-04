@@ -78,6 +78,40 @@ namespace TpTarjeta_JPC_DB_Test
         public void Boleto_de_uso_Frecuente()
         {
             //Primeros 29 viajes Tarifa normal
+            for (int i = 0; i < 29; i++)
+            {
+                tarjeta.CargarSaldo(1200);
+                colectivo.PagarCon(tarjeta);
+                Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
+            }
+
+            //30 al 79 20% de descuento
+            for (int j = 0; j < 49; j++)
+            {
+                tarjeta.CargarSaldo(960);
+                colectivo.PagarCon(tarjeta);
+                Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
+            }
+
+            //Viaje 80 25% de descuento
+            tarjeta.CargarSaldo(900);
+            colectivo.PagarCon(tarjeta);
+            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
+
+            //Viaje 81 en adelante Tarifa normal
+            tarjeta.CargarSaldo(1200);
+            colectivo.PagarCon(tarjeta);
+            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
+
+            tarjeta.CargarSaldo(1200);
+            colectivo.PagarCon(tarjeta);
+            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(0));
+
+            //Pasa 1 mes y se reinician los beneficios de uso frecuente
+
+            tiempoFalso.AgregarDias(30);
+
+            //Primeros 29 viajes Tarifa normal
             for (int i = 1; i <= 29; i++)
             {
                 tarjeta.CargarSaldo(1200);
@@ -86,7 +120,7 @@ namespace TpTarjeta_JPC_DB_Test
             }
 
             //30 al 79 20% de descuento
-            for (int i = 1; i >= 49; i++)
+            for (int i = 1; i <= 49; i++)
             {
                 tarjeta.CargarSaldo(960);
                 colectivo.PagarCon(tarjeta);

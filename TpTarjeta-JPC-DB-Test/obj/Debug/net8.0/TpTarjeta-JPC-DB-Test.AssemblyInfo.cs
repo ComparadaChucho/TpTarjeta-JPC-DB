@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TpTarjeta-JPC-DB-Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14a8fd7a759ace09369dcfd9dd67d3b3121e57eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c02b023ea284632e6327b120debe75730d2a106c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TpTarjeta-JPC-DB-Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TpTarjeta-JPC-DB-Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
