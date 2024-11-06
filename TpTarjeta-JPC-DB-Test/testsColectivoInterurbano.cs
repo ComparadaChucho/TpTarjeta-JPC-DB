@@ -7,7 +7,7 @@ namespace TpTarjeta_JPC_DB_Test
 
     {
         public Tarjeta tarjeta;
-        public Colectivo colectivo, interurbano;
+        public Interurbano interurbano;
         public TiempoFalso tiempoFalso;
 
         [SetUp]

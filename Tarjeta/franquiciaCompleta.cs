@@ -4,8 +4,6 @@ namespace TP
 {
     public class FranquiciaCompleta : Tarjeta
     {
-        private List<DateTime> viajesRealizados;
-        private Tiempo tiempo;
 
         public FranquiciaCompleta(float saldoInicial, int idTarjeta, Tiempo tiempo) : base(saldoInicial, idTarjeta, tiempo) {
             viajesRealizados = new List<DateTime>();
