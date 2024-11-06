@@ -3,67 +3,29 @@ using TP;
 
 namespace TpTarjeta_JPC_DB_Test
 {
-    public class TestsIteracion3
+    public class testsMedioBoleto
 
     {
-        public Tarjeta tarjeta;
-        public Colectivo colectivo;
         public TiempoFalso tiempoFalso;
+        public Colectivo colectivo;
 
         [SetUp]
         public void Setup()
         {
-            tarjeta = new Tarjeta(0, 564987, tiempoFalso);
-            colectivo = new Colectivo("102", false);
+            colectivo = new Colectivo("102");
             tiempoFalso = new TiempoFalso();
         }
 
         [Test]
-        public void Saldo_De_La_Tarjeta()
+        public void Franquicia_De_Boleto()
         {
-            tarjeta.CargarSaldo(9000);
-            tarjeta.CargarSaldo(9000);
-            tarjeta.CargarSaldo(9000);
-            tarjeta.CargarSaldo(9000);
-            tarjeta.CargarSaldo(2000);
+            MedioBoleto medioBoleto = new MedioBoleto(0, 123, tiempoFalso);
 
-            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(36000));
-            Assert.That(tarjeta.saldoPendiente, Is.EqualTo(2000));
+            tiempoFalso.AgregarMinutos(500);
 
-            tarjeta.DescontarSaldo(2000);
-            Assert.That(tarjeta.ObtenerSaldo(), Is.EqualTo(36000));
-            Assert.That(tarjeta.saldoPendiente, Is.EqualTo(0));
-        }
-
-        [Test]
-        public void Limitacion_En_El_Pago_Franquicias_Completas()
-        {
-            FranquiciaCompleta franquicia = new FranquiciaCompleta(1000, 123, tiempoFalso);
-
-            tiempoFalso.AgregarMinutos(360);
-
-            float tarifa = franquicia.CalcularTarifa(940);
-            Assert.That(0, Is.EqualTo(tarifa));
-
-            tarifa = franquicia.CalcularTarifa(940);
-            Assert.That(0, Is.EqualTo(tarifa));
-
-            //Se quedo sin viajes gratuitos, cobra tarifa normal
-            tarifa = franquicia.CalcularTarifa(940);
-            Assert.That(940, Is.EqualTo(tarifa));
-
-            tiempoFalso.AgregarDias(1);
-
-            //Paso 1 dia, tiene 2 boletos gratuitos
-            tarifa = franquicia.CalcularTarifa(940);
-            Assert.That(0, Is.EqualTo(tarifa));
-
-            tarifa = franquicia.CalcularTarifa(940);
-            Assert.That(0, Is.EqualTo(tarifa));
-
-            //Se quedo sin viajes gratuitos, cobra tarifa normal
-            tarifa = franquicia.CalcularTarifa(940);
-            Assert.That(940, Is.EqualTo(tarifa));
+            medioBoleto.CargarSaldo(2000);
+            colectivo.PagarCon(medioBoleto);
+            Assert.That(medioBoleto.ObtenerSaldo(), Is.EqualTo(1400));
         }
 
         [Test]
@@ -78,7 +40,7 @@ namespace TpTarjeta_JPC_DB_Test
 
             //Como no pasaron mas de 5 minutos cobra tarifa normal
             tarifa = medioBoleto.CalcularTarifa(940);
-            Assert.IsFalse(tarifa == 470); 
+            Assert.IsFalse(tarifa == 470);
 
             tiempoFalso.AgregarMinutos(6);
 
@@ -99,7 +61,7 @@ namespace TpTarjeta_JPC_DB_Test
 
             //Pasaron mas de 5 minutos pero se quedo sin viajes con medio Boleto, cobra tarifa normal
             tarifa = medioBoleto.CalcularTarifa(940);
-            Assert.That(940, Is.EqualTo(tarifa)); 
+            Assert.That(940, Is.EqualTo(tarifa));
 
             tiempoFalso.AgregarDias(1);
 
@@ -127,6 +89,33 @@ namespace TpTarjeta_JPC_DB_Test
             //Pasaron mas de 5 minutos pero se quedo sin viajes con medio Boleto, cobra tarifa normal
             tarifa = medioBoleto.CalcularTarifa(940);
             Assert.That(940, Is.EqualTo(tarifa));
+        }
+
+        [Test]
+        public void Franja_Horaria()
+        {
+            MedioBoleto medioBoleto = new MedioBoleto(0, 123, tiempoFalso);
+
+            medioBoleto.CargarSaldo(9000);
+
+            //Son las 00:00:00 de un lunes, cobra tarifa normal
+            colectivo.PagarCon(medioBoleto);
+
+            Assert.That(medioBoleto.ObtenerSaldo(), Is.EqualTo(7800));
+
+            tiempoFalso.AgregarMinutos(360);
+
+            //Son las 06:00:00 de un lunes, cobra tarifa con beneficio
+            colectivo.PagarCon(medioBoleto);
+
+            Assert.That(medioBoleto.ObtenerSaldo(), Is.EqualTo(7200));
+
+            tiempoFalso.AgregarDias(-1);
+
+            //Son las 06:00:00 pero es Domingo, cobra tarifa normal
+            colectivo.PagarCon(medioBoleto);
+
+            Assert.That(medioBoleto.ObtenerSaldo(), Is.EqualTo(6000));
         }
     }
 }

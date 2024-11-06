@@ -4,31 +4,20 @@ namespace TP
 {
     public class Colectivo
     {
-        private float tarifa = 1200;
-        private float tarifaInterurbano = 2500;
+        protected float tarifa = 1200;
         private float saldoNegativoPermitido = -480;
-        public bool interurbano;
         private string linea;
         private Boleto boleto;
 
-        public Colectivo(string linea, bool interurbano)
+        public Colectivo(string linea)
         {
             this.linea = linea;
-            this.interurbano = interurbano;
         }
 
         public Boleto PagarCon(Tarjeta tarjeta)
         {
             float tarifaAplicada;
-
-            if (interurbano == true)
-            {
-                tarifaAplicada = tarjeta.CalcularTarifa(tarifaInterurbano);
-            }
-            else
-            {
-                tarifaAplicada = tarjeta.CalcularTarifa(tarifa);
-            }
+            tarifaAplicada = tarjeta.CalcularTarifa(tarifa);
 
             if (tarjeta.ObtenerSaldo() - tarifaAplicada >= saldoNegativoPermitido)
             {
