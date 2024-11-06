@@ -10,8 +10,8 @@ namespace TP
         private float limiteSaldo = 36000;
         private float saldoNegativoPermitido = -480;
         private float[] cargasAceptadas = { 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000 };
-        private Tiempo tiempo;
-        private List<DateTime> viajesRealizados;
+        public Tiempo tiempo;
+        public List<DateTime> viajesRealizados;
         private DateTime ultimoMes;
 
         public Tarjeta(float saldoInicial, int id, Tiempo tiempo)

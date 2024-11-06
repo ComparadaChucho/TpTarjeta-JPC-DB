@@ -4,8 +4,6 @@ namespace TP
 {
     public class JubiladoGratuito : Tarjeta
     {
-        private List<DateTime> viajesRealizados;
-        private Tiempo tiempo;
 
         public JubiladoGratuito(float saldoInicial, int idTarjeta, Tiempo tiempo) : base(saldoInicial, idTarjeta, tiempo)
         {
